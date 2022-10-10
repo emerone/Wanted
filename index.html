@@ -1,0 +1,1790 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./assets/img/logo carsam white.svg">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Carsam</title>
+</head>
+<body>
+    <!-- style -->
+    <style>
+
+        /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+
+/* Document
+   ========================================================================== */
+
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+
+html {
+  line-height: 1.15; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+}
+
+/* Sections
+   ========================================================================== */
+
+/**
+ * Remove the margin in all browsers.
+ */
+
+body {
+  margin: 0;
+}
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+
+main {
+  display: block;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+   ========================================================================== */
+
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+
+hr {
+  box-sizing: content-box; /* 1 */
+  height: 0; /* 1 */
+  overflow: visible; /* 2 */
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+
+pre {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/* Text-level semantics
+   ========================================================================== */
+
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+
+a {
+  background-color: transparent;
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+
+abbr[title] {
+  border-bottom: none; /* 1 */
+  text-decoration: underline; /* 2 */
+  text-decoration: underline dotted; /* 2 */
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+
+code,
+kbd,
+samp {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+
+img {
+  border-style: none;
+}
+
+/* Forms
+   ========================================================================== */
+
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit; /* 1 */
+  font-size: 100%; /* 1 */
+  line-height: 1.15; /* 1 */
+  margin: 0; /* 2 */
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+
+button,
+input { /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+
+button,
+select { /* 1 */
+  text-transform: none;
+}
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Correct the padding in Firefox.
+ */
+
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+
+legend {
+  box-sizing: border-box; /* 1 */
+  color: inherit; /* 2 */
+  display: table; /* 1 */
+  max-width: 100%; /* 1 */
+  padding: 0; /* 3 */
+  white-space: normal; /* 1 */
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+
+progress {
+  vertical-align: baseline;
+}
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+
+textarea {
+  overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box; /* 1 */
+  padding: 0; /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+
+[type="search"] {
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
+}
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
+}
+
+/* Interactive
+   ========================================================================== */
+
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+
+details {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+
+summary {
+  display: list-item;
+}
+
+/* Misc
+   ========================================================================== */
+
+/**
+ * Add the correct display in IE 10+.
+ */
+
+template {
+  display: none;
+}
+
+/**
+ * Add the correct display in IE 10.
+ */
+
+[hidden] {
+  display: none;
+}
+                  /* Setup */
+
+:is(*,*::after,*::after){
+  box-sizing: border-box;
+  text-shadow: #0001 0 0 .5rem;
+}
+
+*::selection{
+  background: #0001;
+}
+
+a{
+  text-decoration: none;
+  cursor: pointer;
+  color: #000c;
+  font-weight: 600;
+}
+
+h1{
+  font-size: 5rem;
+}
+
+h2{
+  font-size: 2rem;
+}
+
+p{
+  line-height: 170%;
+}
+
+i{
+  transform: translateY(7.5%);
+}
+
+html, body{
+  --background-black: #272727;
+  --base-color-light: #fffc;
+  --base-color-dark: #000c;
+  --content-width: min(80rem, 100vw);
+  --nav-height: 6rem;
+  --animation-duration: 1s;
+  scroll-behavior: smooth;
+  color: #000c;
+  font-family: sans-serif;
+  overflow-x: hidden;
+  transition: height 1s ease;
+}
+
+
+@media (pointer: fine) {
+  main {
+    padding-inline-end: .625rem;
+  }
+}
+
+
+          /* Body */
+
+  /* Header */
+
+  /* TODO design */
+
+header{
+  --text-color: #fffe;
+  --text-shadow: #000c 0 0 .5rem;
+  /* display: inline-block;
+  width: 100%; */
+  overflow: hidden;
+  position: relative;
+  box-shadow: #0002 0 0 1.5rem;
+}
+
+header > div{
+  display: flex;
+}
+
+header > div > div:first-of-type{
+  padding: 4rem;
+  padding-right: 0rem;
+  height: calc(100vh - var(--nav-height));
+  max-width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+}
+
+
+header > div > div:first-of-type > h1{
+  color: var(--text-color);
+  margin: 0rem auto;
+  font-size: 4rem;
+  text-shadow: var(--text-shadow);
+  /* font-size: max(3.5vw, 2rem); */
+}
+
+header > div > div:first-of-type > p{
+  color: var(--text-color);
+  margin: 0rem auto;
+  padding-right: 15rem;
+  font-size: 1.3rem;
+  text-shadow: var(--text-shadow);
+  /* font-size: max(1.5vw, 1rem); */
+}
+#OBJECTS{
+  color: #000;
+}
+
+header > div > div:first-of-type > a{
+  max-width: max-content;
+  margin-right: 18rem;
+  align-self: center;
+}
+
+header > div > div:first-of-type > i{
+  text-align: center;
+  color: #ffff;
+  text-shadow: var(--text-shadow);
+  font-size: 6rem;
+  margin-right: 14rem;
+}
+
+header > div > div:first-of-type img {
+  display: none;
+}
+
+header > div > div:last-of-type{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 32rem;
+}
+
+header > div > div:last-of-type > img{
+  min-width: 28rem;
+  margin-top: 4rem;
+  margin-bottom: 8rem;
+  color: #fffe;
+  text-shadow: var(--text-shadow);
+  font-size: 30vw;
+  background: radial-gradient(#0002 0%, #0000 100%);
+  --webkit-backdrop-filter: blur(10rem);
+}
+
+header > img{
+  position: absolute;
+  top: -11%;
+  left: -.5rem;
+  z-index: -10;
+  width: 102%;
+  height: 100vh;
+  object-fit: cover;
+  object-position: left 60%;
+}
+
+  /* main.accueil */
+
+
+main{
+  width: var(--content-width);
+  margin: 0rem auto; 
+}
+
+main:not(:last-of-type){
+  margin-bottom: 12rem;
+}
+
+
+main > nav{
+  height: var(--nav-height);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: var(--content-width);
+  margin: 0rem auto;
+
+  /* width: 100%;
+  padding: 0rem max(calc(100vw / 2 - 40rem ), calc(100% - 100%)); */
+}
+
+main > nav > a:first-child{
+  margin-right: auto;
+  /* margin-left: 1rem; */
+}
+
+body.a > main > nav > a:nth-of-type(1)::before{
+  transform: scale(1);
+}
+
+body.b > main > nav > a:nth-of-type(2)::before{
+  transform: scale(1);
+}
+
+body.c > main > nav > a:nth-of-type(3)::before{
+  transform: scale(1);
+}
+
+main > nav > a:last-child{
+  margin-left: auto;
+  /* margin-right: 1rem; */
+}
+
+main > nav > a{
+  position: relative;
+  /* font-weight: 500; */
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+  text-shadow: var(--text-shadow);
+  color: var(--text-color);
+  padding: 1rem .5rem;
+  margin: 0 auto;
+  outline: none;
+}
+
+main > nav > a::before{
+  content: '';
+  position: absolute;
+  bottom: 15%;
+  left: 0%;
+  width: 100%;
+  height: 4px;
+  background: var(--base-color-dark);
+  border-radius: 30rem;
+  transform: scalex(0);
+  transition: all .5s ease;
+}
+
+main > nav > a:hover::before{
+  transform: scalex(1);
+}
+
+.mobile-logo {
+  text-align: center;
+}
+
+.mobile-logo img {
+  width: min(40rem, 100%);
+  display: none;
+}
+
+main.accueil {
+  display: flex;
+  flex-direction: column;
+}
+
+main.accueil > div:nth-of-type(2) {
+  order: 1;
+}
+
+main.accueil > div:nth-of-type(3) {
+  order: 2;
+}
+
+main.accueil > div{
+  margin: 0 1rem;
+}
+
+main.accueil > div:nth-of-type(1) > h2{
+  width: 100%;
+  margin-block-start: 0px;
+  text-align: center;
+  display: inline-block;
+  justify-content: center;
+}
+
+main.accueil > div:nth-of-type(1) > p{
+  width: min(40rem, 100%);
+  margin: 0rem auto 6rem;
+  text-align: center;
+}
+
+main.accueil > div:nth-of-type(1) > div {
+  --gap: 2rem;
+  display: flex;
+  gap: var(--gap);
+  margin-bottom: 15rem;
+}
+
+main.accueil > div:nth-of-type(1) > div > section{
+  width: calc(50% - var(--gap) / 2);
+  padding: 1rem;
+  padding-left: 1.25rem;
+  border-radius: .25rem;
+  box-shadow: #00000010 0rem 0rem .5rem;
+  border: 1px #00000010 solid;
+  transition: all .3s ease;
+  text-shadow: #0000 0rem 0rem 1rem ;
+  max-width: 21rem;
+  margin-inline: auto;
+}
+
+  /* TODO design */
+
+main.accueil > div:nth-of-type(1) > div > section:hover{
+  background: var(--base-color-dark);
+  color: var(--base-color-light);
+  text-shadow: #0003 0rem 0rem 1rem ;
+}
+
+main.accueil > div:nth-of-type(1) > div > section > p{
+  margin-bottom: .25rem;
+}
+
+main.accueil > div:nth-of-type(1) > div > section > h3{
+  padding-left: .35rem;
+  margin-top: .25rem;
+}
+
+  /* main.accueil 2nd part */
+
+main.accueil{
+  --gap: 4rem;
+}
+
+main.accueil > div:nth-of-type(2){
+  display: flex;
+  gap: var(--gap);
+  margin-bottom: var(--gap);
+}
+
+main.accueil > div:nth-of-type(2) > section{
+  padding: 1.5rem;
+  width: 100%;
+
+  /* TODO design */
+  
+  box-shadow: #00000010 0rem 0rem .5rem;
+  border: 1px #00000010 solid;
+}
+
+main.accueil > div:nth-of-type(2) > section:nth-of-type(2) > h3{
+  margin-left: .5rem;
+}
+
+main.accueil > div:nth-of-type(2) > section > p{
+  font-size: .9rem;
+}          
+
+main.accueil > div:nth-of-type(2) > section:nth-of-type(1) > div{
+  display: flex;
+  align-items: center;
+}
+
+main.accueil > div:nth-of-type(2) > section:nth-of-type(1) > div > a:nth-of-type(1){
+  background: var(--base-color-dark);
+  box-shadow: #0001 0 0 .5rem;
+  border-radius: 500rem;
+  height: 2rem;
+  width: 2rem;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 0.5rem;
+  transition: all .3s ease;
+}
+
+main.accueil > div:nth-of-type(2) > section:nth-of-type(1) > div > a:nth-of-type(1):hover {
+  transform: scale(1.1);
+}
+
+main.accueil > div:nth-of-type(2) > section:nth-of-type(1) > div > a:nth-of-type(1) > i {
+  transform: scale(150%) translate(6%, 0%);
+  color: var(--base-color-light);
+}
+
+main.accueil > div:nth-of-type(2) > section:nth-of-type(1) > div > a:nth-of-type(1){
+  transition: all .3s ease;
+}
+
+main.accueil > div:nth-of-type(2) > section:nth-of-type(1) > div > a:nth-of-type(2){
+  transition: all .3s ease;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+}
+
+main.accueil > div:nth-of-type(2) > section:nth-of-type(1) > div > a:nth-of-type(2):hover{
+  transform: translate(.5rem, -.25rem) ;
+}
+
+main.accueil > div:nth-of-type(2) > section:nth-of-type(1) > h3:last-child{
+  width: max-content;
+  margin: 0%;
+  margin-left: auto;
+  margin-right: 2rem;
+  padding: 1rem 1.5rem;
+  border-radius: .25rem;
+  box-shadow: #0002 0 0 .1rem;
+  border: 1px solid #eee;
+  cursor: default;
+}
+
+main.accueil > div:nth-of-type(2) > section:nth-of-type(1) > h3:last-child::selection{
+  background: #0000;
+}
+
+main.accueil > div:nth-of-type(2) > section:nth-of-type(2) > a{
+  padding: .7rem 1rem;
+  margin: .75rem 2rem;
+  border-radius: .35rem;
+  display: inline-block;
+  border: 1px solid #0001;
+  transition: all .3s ease;
+  background: #000c;
+  color: var(--base-color-light);
+  box-shadow: #000c 0 0 .2rem;
+}
+
+main.accueil > div:nth-of-type(2) > section:nth-of-type(2) > a:hover{
+  color: var(--base-color-dark);
+  box-shadow: #0004 0 0 .1rem;
+  background: unset;
+}
+
+  /* main.accueil 3rd part */
+
+main.accueil > div:nth-of-type(3){
+  display: flex;
+  gap: var(--gap);
+}
+
+main.accueil > div:nth-of-type(3) > section{
+  padding: 1.5rem;
+  width: 100%;
+  text-align: center;
+
+  /* TODO design */
+  
+  box-shadow: #00000010 0rem 0rem .5rem;
+  border: 1px #00000010 solid;
+}
+
+main.accueil > div:nth-of-type(3) > section:first-of-type{
+  display: flex;
+  gap: 1.5rem;
+}
+
+main.accueil > div:nth-of-type(3) > section:first-of-type > div > h3:nth-of-type(1){
+  font-size: 2rem;
+  margin-top: 0%;
+}
+
+main.accueil > div:nth-of-type(3) > section:first-of-type > div > h3:nth-of-type(2){
+  margin-left: .5rem;
+}
+
+main.accueil > div:nth-of-type(3) > section > *{
+  flex: 1;
+}
+
+  /* main.accueil 4th part */
+
+main.accueil .opinions {
+  margin-bottom: 8rem;
+}
+
+.opinions > h2{
+  width: max-content;
+  margin: 2rem auto;
+}
+
+.opinions > div{
+  position: relative;
+  --gap: 5rem;
+  --padding: 4rem;
+  --width: 28rem;
+  display: flex;
+  gap: var(--gap);
+  width: calc(var(--width) * 2 + var(--padding) * 3.25);
+  margin: 6rem auto;
+  overflow: hidden;
+}
+
+.opinions > div > span:first-of-type{
+  position: absolute;
+  top: 0;
+  bottom: 0%;
+  left: 0%;
+  width: calc(var(--padding) - 2rem);
+  z-index: 10;
+  transition: all .2s .8s ease;
+  display: flex;
+  align-items: center;
+}
+
+.opinions > div > span:last-of-type{
+  position: absolute;
+  top: 0;
+  bottom: 0%;
+  right: 0%;
+  width: calc(var(--padding) - 2rem);
+  z-index: 10;
+  transition: all .2s .8s ease;
+  display: flex;
+  align-items: center;
+}
+
+.opinions > div > span > i {
+  font-size: 4rem;
+  transform: translate(-1rem);
+  transition: all .5s ease;
+}
+
+@media (pointer: fine) {
+  .opinions > div > span > i:hover{
+    transform: translate(-1.5rem);
+    font-size: 5rem;
+  }
+}
+
+
+.opinions > div > div {
+  display: flex;
+  gap: var(--gap);
+  transition: all 1.5s ease;
+  padding-left: var(--padding);
+}
+
+.opinions > div > div.a {
+  transform: translateX(0%);
+}
+
+.opinions > div > div.b {
+  transform: translateX(calc(-1 * var(--width) - var(--gap) * 1) );
+}
+
+.opinions > div > div.c {
+  transform: translateX(calc(-2 * var(--width) - var(--gap) * 2) );
+}
+
+.opinions > div > div.d {
+  transform: translateX(calc(-3 * var(--width) - var(--gap) * 3) );
+}
+
+.opinions > div > div.e {
+  transform: translateX(calc(-4 * var(--width) - var(--gap) * 4) );
+}
+
+.opinions > div > div.f {
+  transform: translateX(calc(-5 * var(--width) - var(--gap) * 5) );
+}
+
+.opinions > div > div.g {
+  transform: translateX(calc(-6 * var(--width) - var(--gap) * 6) );
+}
+
+  /* avis */
+
+.cards{
+  padding: 1.5rem;
+  width: var(--width);
+  display: flex;
+  flex-direction: column;
+
+  /* TODO design */
+  
+  box-shadow: #00000010 0rem 0rem .5rem;
+  border: 1px #00000010 solid;
+}
+
+.cards > div{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.cards > h3{
+  margin-left: .5rem;
+}
+
+.cards > p{
+  margin-bottom: auto;
+}
+
+.cards > div > * > *:not(i){
+  margin: 0 1rem;
+}
+
+.cards > div > * > i{
+  color: #e2e561;
+}
+
+  /* main À-propos  */
+
+main.a-propos > div{
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+  padding: 1rem;
+  margin-block: 3rem;
+}
+
+main.a-propos > div > div{
+  text-align: center;
+  width: 100%;
+}
+
+main.a-propos > div > div:first-of-type > h2{
+  margin-bottom: 2.5rem;
+  margin-top: .5rem;
+}
+
+main.a-propos > div > div:first-of-type p{
+  width: 90%;
+  margin: 0 auto;
+}
+
+main.a-propos > div > div:first-of-type > div{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+}
+
+main.a-propos > div > div:first-of-type > div > *{
+  flex-grow: 1;
+}
+
+main.a-propos > div > div:first-of-type > div i {
+  font-weight: bold;
+}
+
+main.a-propos > div > div:first-of-type > div > a{
+  color: #000b;
+}
+
+main.a-propos > div > div:first-of-type > div > a > i{
+  color: var(--background-black);
+}
+
+  /* main Catalogue  */
+
+main.catalogue{
+  text-align: center;
+}
+
+main.catalogue > div{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 4rem 2rem;
+  padding: 2rem;
+}
+
+main.catalogue > h2{
+  margin-bottom: 4rem;
+  display: inline-block;
+}
+main.catalogue > div > div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  gap: 1.5rem;
+  width: 30%;
+  min-width: 18rem;
+  
+  box-shadow: #00000010 0rem 0rem .5rem;
+  border: 1px #00000010 solid;
+  border-radius: .25rem;
+}
+
+main.catalogue > div > div > *{
+  margin-block: auto;
+}
+
+main.catalogue > div > div > img{
+  width: 100%;
+  cursor: pointer;
+  transition: all .75s ease;
+}
+
+main.catalogue > div > div > img:hover{
+  transform: scale(105%);
+}
+
+main.catalogue > div > div > img::selection{
+  background: #0000;
+}
+
+main.catalogue > div > div > a {
+  font-weight: 500;
+  cursor: pointer;
+  padding: .7rem 1rem;
+  background: #3331;
+  margin-bottom: .5rem;
+  transition: all .25s ease, width .5s ease;
+  width: 5.5rem;
+  color: #000e;
+  
+  box-shadow: #00000006 0rem 0rem .5rem;
+  border: 1px #00000006 solid;
+  border-radius: .25rem;
+}
+
+main.catalogue > div > div > a:hover {
+  background: #3332;
+  color: #000f;
+  width: 6.5em;
+  
+  box-shadow: #0000000a 0rem 0rem .5rem;
+  border: 1px #0000000a solid;
+}
+
+main.catalogue > div > div > a::selection {
+  background: #0000;
+}
+
+  /* dialogs */
+
+dialog{
+  animation: start-dialog var(--animation-duration) ease both;
+  outline: none;
+  padding: 0%;
+  width: 40rem;
+  box-shadow: #00000018 0rem 0rem 1rem;
+  border: 1px #00000018 solid;
+}
+
+dialog h2{
+  color: #000c;
+  border-radius: .25rem;
+}
+
+dialog > div{
+  padding: 2rem;
+  padding-bottom: 1rem;
+  gap: 2rem;
+}
+
+dialog > div > div > img{
+  width: 20rem;
+  transition: all .75s ease;
+}
+
+dialog > div > div > img:hover{
+  transform: scale(105%);
+}
+
+dialog > div > div > img::selection{
+  background: #0000;
+}
+
+dialog > div > div > a {
+  margin-top: .5rem;
+  cursor: pointer;
+  padding: .7rem 1rem;
+  background: #3331;
+  margin-bottom: .5rem;
+  transition: all .25s ease, width .5s ease;
+  width: 5.5rem;
+  color: #000e;
+  
+  box-shadow: #00000006 0rem 0rem .5rem;
+  border: 1px #00000006 solid;
+  border-radius: .25rem;
+}
+
+dialog > div > div > a::selection{
+  background: #0000;
+}
+
+dialog > div > div > a:hover {
+  background: #3332;
+  color: #000f;
+  width: 6.5em;
+  
+  box-shadow: #0000000a 0rem 0rem .5rem;
+  border: 1px #0000000a solid;
+}
+
+main.catalogue > div > div > a::selection {
+  background: #0000;
+}
+
+
+          /* Animation */
+
+@keyframes start-dialog {
+  0%{
+    transform: translatey(-5rem);
+    opacity: 0;
+  }
+  100%{
+    transform: translatey(0rem);
+    opacity: 1;
+  }
+}
+
+@keyframes end-dialog {
+  0%{
+    transform: translatey(0rem);
+    opacity: 1;
+  }
+  100%{
+    transform: translatey(5rem);
+    opacity: 0;
+  }
+}
+
+@keyframes from-left-start {
+  0%{
+    opacity: 0;
+    transform: translatex(-5rem);
+  }
+  100%{
+    opacity: 1;
+    transform: translatex(0rem);
+  }
+}
+
+@keyframes from-right-start {
+  0%{
+    opacity: 0;
+    transform: translatex(5rem);
+  }
+  100%{
+    transform: translatex(0rem);
+    opacity: 1;
+  }
+}
+
+@keyframes to-left-end {
+  0%{
+    transform: translatex(0rem);
+  }
+  100%{
+    transform: translatex(-5rem);
+    opacity: 0;
+  }
+}
+
+@keyframes to-right-end {
+  0%{
+    transform: translatex(0rem);
+  }
+  100%{
+    transform: translatex(5rem);
+    opacity: 0;
+  }
+}
+
+@keyframes scalex {
+  0%{
+    transform: scalex(0px);
+  }
+  100%{
+    transform: scalex(100%);
+  }
+}
+
+
+
+          /* Responsive */
+
+@media screen and (max-width:1250px) {
+  .opinions > div{
+    width: calc(var(--width) + var(--padding) * 2);
+  }
+}
+
+@media screen and (max-width:1094px) {
+  header > div > div:last-of-type{
+    display: none;
+  }
+  header > div > div:first-of-type{
+    max-width: 100%;
+    text-align: center;
+  }
+  header > div > div:first-of-type > p{
+    padding-inline: 6rem;
+  }
+  header > div > div:first-of-type{
+    padding: 4rem;
+  }
+  header > div > div:first-of-type > i{
+    margin-inline: auto;
+  }
+  header > div > div:first-of-type img {
+    display: unset;
+    transform: translate(-2%);
+  }
+  main.accueil > div:nth-of-type(1) > div{
+    flex-wrap: wrap;
+  }
+  main.accueil > div:nth-of-type(2){
+    flex-wrap: wrap;
+  }  
+  main.accueil > div:nth-of-type(2) > *{
+    max-width: 40rem;
+    margin-inline: auto;
+  }
+  main.accueil > div:nth-of-type(3){
+    flex-wrap: wrap;
+  }  
+  main.accueil > div:nth-of-type(3) > *{
+    max-width: 40rem;
+    margin-inline: auto;
+    flex: unset;
+  }
+  main.a-propos > div{
+    flex-direction: column;
+  }
+  main.a-propos > div > div{
+    width: 40rem;
+  }
+  main.a-propos > div:first-of-type > div:last-of-type{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  main.accueil > div:nth-of-type(1) > div{
+    margin-block-end: 8rem;
+  }
+  .mobile-logo img {
+    display: unset;
+  }
+  main:not(:last-of-type){
+    margin-bottom: 8rem;
+  }
+}
+
+@media screen and (max-width:826px) {
+  .opinions > h2{
+    margin-bottom: 4rem;
+  }
+  main.a-propos > div:first-of-type > div:last-of-type{
+    transform: scale(.9);
+    margin: -1rem;
+  }
+  .opinions > div{
+    --width: 24rem;
+  }
+  .cards {
+    text-align: center;
+  }
+  main.accueil .opinions{
+    margin-bottom: 2rem;
+  }
+}
+
+@media screen and (max-width:632px) {
+  header > div > div:first-of-type > h1{
+    font-size: 3rem;
+  }
+  main.accueil > div:nth-of-type(3) > section:first-of-type{
+    flex-direction: column;
+    max-width: 18rem;
+    margin-inline: auto;
+  }
+  main.accueil > div:nth-of-type(1) > div > section{
+    width: unset;
+  }
+  header > div > div:first-of-type{
+    padding: 1rem;
+  }
+  .opinions > h2{
+    margin-block-end: 5rem;
+  }
+  main.accueil > div:nth-of-type(1) > div{
+    margin-bottom: 5rem;
+  }
+  header > div > div:first-of-type > p{
+    display: none;
+  }
+  main.a-propos > div:first-of-type > div:last-of-type{
+    transform: scale(.7);
+    margin: -3rem;
+  }
+  main.a-propos > div > div{
+    width: 30rem;
+  }
+  .opinions > div{
+    --padding: 1.5rem;
+    --width: calc(100vw - 8rem);
+  }
+  .cards {
+    text-align: center;
+  }
+  .cards > div{
+    flex-direction: column;
+  }
+  .opinions > div > span{
+    display: none !important;
+  }
+}
+
+@media screen and (max-width:468px) {
+  main.a-propos > div:first-of-type > div:last-of-type{
+    transform: scale(.5);
+    margin: -8rem;
+    margin-bottom: -10rem;
+  }
+  main.a-propos > div > div{
+    width: 19rem;
+  }
+  .opinions > div{
+    --width: calc(100vw - 8rem);
+  }
+}
+
+@media screen and (min-width:calc(1920px * calc(1 + 1/2) - 100px)) {
+  html{
+    font-size: calc(16px * calc(1 + 1/2));
+  }
+}
+
+@media screen and (min-width:calc(1920px * calc(1 + 1/3) - 100px)) {
+  html{
+    font-size: calc(16px * calc(1 + 1/3));
+  }
+}
+
+@media screen and (min-width:calc(1920px * calc(1 + 1/1) - 200px)) {
+  html{
+    font-size: calc(16px * calc(1 + 1/1));
+  }
+}
+
+@media screen and (min-width:calc(1920px * calc(1 + 2/1) - 400px)) {
+  html{
+    font-size: calc(16px * calc(1 + 2/1));
+  }
+}
+
+@media screen and (min-width:calc(1920px * calc(1 + 3/1) - 500px)) {
+  html{
+    font-size: calc(16px * calc(1 + 3/1));
+  }
+}
+
+      /* Custom-Scrollbar */
+
+/* width */
+::-webkit-scrollbar {
+  width: .625rem;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: var(--background-black);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #fffffff9;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #ffffffdf;
+}
+    </style>
+    <!-- header -->
+    <header>
+        <div>
+            <div>
+                <h1>Carsam Vente de Pièces de Carrosserie </h1>
+                <p>Le qu'un de autour la et ou mon parfaite dontaite dont, le ce frémir en a sincere, force florentines haut au</p>
+                <!-- <i class='bx bx-caret-down'></i> -->
+                <img src="./assets/img/logo carsam white.svg" alt="logo">
+            </div>
+            <div>
+                <img src="./assets/img/logo carsam white.svg" alt="Logo">
+            </div>
+        </div>
+        <img src="./assets/img/1379595544.svg" alt="Background">
+    </header>
+    <!-- main -->
+    <main>
+        <nav><a href="#Accueil">accueil</a><a href="#À-propos">À-propos</a></nav>
+    </main>
+
+    <!-- <main class="mobile-logo">
+        <img src="./assets/img/logo carsam black.svg" alt="logo">
+    </main> -->
+
+    <main class="accueil" id="Accueil">
+        <!-- cards -->
+        <div>
+            <h2>Nos atouts</h2>
+            <p>Nous proposons le meilleur pour nos clients... consectetur adipisicing elit. Rem consequatur debitis voluptas necessitatibus cumque hic pariatur incidunt velit neque adipisci.</p>
+            <div>
+                <section>
+                    <h3>
+                        <!-- <i class='bx bx-check-square' ></i> -->
+                        <i class="bx bx-shield-minus"></i>
+                        Solidité
+                    </h3>
+                    <p>Lorem ipsum dolor,  amet consectetur adipisicing elit. Saepe, earum aperiam eum possimus fuga nihil dictadicta. Facere, maxime eveniet quae.</p>
+                </section>
+
+                <section>
+                    <h3>
+                        <!-- <i class='bx bx-check-square' ></i> -->
+                        <i class="bx bx-purchase-tag-alt"></i>
+                        Prix
+                    </h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe, earum aperiam eum possimuspossimus fuga nihil dicta. Facere, maxime eveniet quae.</p>
+                </section>
+
+                <section>
+                    <h3>
+                        <!-- <i class='bx bx-check-square' ></i> -->
+                        <i class="bx bx-user-circle"></i>
+                        Besoins
+                    </h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe, earumearum aperiam eum possimus fuga nihil dicta. Facere, maxime eveniet quae.</p>
+                </section>
+            </div>
+        </div>
+
+        <div>
+            <section>
+                <h2>Notre notation</h2>
+                <p>Aussi exquise la de de surtout doué dont faite et âme, voluptueux long et couronne» visage blaspheme flots nous ses</p>
+                <div>
+                    <a title="Les notations" href="#À-propos"><i class='bx bx-chevrons-right'></i></a>
+                    <a href="#À-propos"> Apprendre plus</a>
+                </div>
+                <h3>Noté : 4.7 / 5</h3>
+            </section>
+            <section>
+                <h2>Une très bonne option</h2>
+                <p>L'abri autour et a son bonheur face gaze femme, décor pontife vivre qu'elle douleur, qu'elle la ce moqueur flots. Crispée</p>
+                <a href="https://www.leboncoin.fr/boutique/3114165/carsam.htm">Catalogue</a>
+            </section>
+        </div>
+
+        <div>
+            <section>
+                <div>
+                    <h2><i class='bx bx-objects-vertical-bottom'></i></h2>
+                    <h2>Comparaison</h2>
+                    <p>Autour trôner vraiment ronge et fatuité genoux. Ses excitant s'abreuve</p>
+                </div>
+                <div>
+                    <h2><i class='bx bx-message-rounded-dots' ></i></h2>
+                    <h2>Assisstance</h2>
+                    <p>Son long corps fleuve dans et vaincu, promene divin tes qui ce elle beauté éclairé et mystérieux</p>
+                </div>
+            </section>
+            <section>
+                <div>
+                    <h2><i class='bx bx-credit-card'></i></h2>
+                    <h2>Payement</h2>
+                    <p>Tous les paiements sont acceptés chez Carsam sauf les cheques</p>
+                </div>
+                <div>
+                </div>
+            </section>
+        </div>
+        <div class="opinions">
+            <h2>Avis des clients</h2>
+            <div class="a">
+
+                <!-- arrows  -->
+
+                <span><i class='bx bx-chevron-left'></i></span>
+                <span><i class='bx bx-chevron-right' ></i></span>
+
+                <!-- cards -->
+                <div>
+                    <section class="cards">
+                        <h3>Au top</h3>
+                        <p>Je tiens à vous remercier pour votre professionnalisme et votre rapidité.
+                            Franchement je suis contente de vous avoir fais confiance !</p>
+                        <div>
+                            <img src="https://www.iconpacks.net/icons/2/free-icon-user-3296.png" style="height:2rem;width: 2rem;border-radius: 225rem;object-fit: cover;" alt="Personne">
+                            <div>
+                                <h4>Kahina Kahina</h4>
+                                <p>Il y a 2 mois</p>
+                            </div>
+                            <div>
+                                <i class='bx bxs-star' ></i><i class='bx bxs-star' ></i><i class='bx bxs-star' ></i><i class='bx bxs-star' ></i><i class='bx bxs-star-half' ></i>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="cards">
+                        <h3>Rien à dire 👌🏾</h3>
+                        <p>C’est mon top magasin vente de pièce carrosserie , j’ai acheté feux arrière chez eux , très bon prix par rapport à la qualité</p>
+                        <div>
+                            <img src="https://www.iconpacks.net/icons/2/free-icon-user-3296.png" style="height:2rem;width: 2rem;border-radius: 225rem;object-fit: cover;" alt="Personne">
+                            <div>
+                                <h4>jinxu zhu</h4>
+                                <p>Il y a 1 mois</p>
+                            </div>
+                            <div>
+                                <i class='bx bxs-star' ></i><i class='bx bxs-star' ></i><i class='bx bxs-star' ></i><i class='bx bxs-star' ></i><i class='bx bxs-star' ></i>
+                            </div>
+                        </div>
+                    </section>
+                    
+                    <section class="cards">
+                        <h3>Très satisfait</h3>
+                        <p>Carsam toutes les pièces de ma voiture c’est eux je recommande !</p>
+                        <div>
+                            <img src="https://www.iconpacks.net/icons/2/free-icon-user-3296.png" style="height:2rem;width: 2rem;border-radius: 225rem;object-fit: cover;" alt="Personne">
+                            <div>
+                                <h4>Lana Camara</h4>
+                                <p>il y a 3 semaines</p>
+                            </div>
+                            <div>
+                                <i class='bx bxs-star' ></i><i class='bx bxs-star' ></i><i class='bx bxs-star' ></i><i class='bx bxs-star' ></i><i class='bx bxs-star-half' ></i>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="cards">
+                        <h3>Excellent service</h3>
+                        <p>Véhicule réparer à moindre coût grâce à Carsam, je recommande</p>
+                        <div>
+                            <img src="https://www.iconpacks.net/icons/2/free-icon-user-3296.png" style="height:2rem;width: 2rem;border-radius: 225rem;object-fit: cover;" alt="Personne">
+                            <div>
+                                <h4>anouar naceur</h4>
+                                <p>Il y a 1 an</p>
+                            </div>
+                            <div>
+                                <i class='bx bxs-star' ></i><i class='bx bxs-star' ></i><i class='bx bxs-star' ></i><i class='bx bxs-star' ></i><i class='bx bxs-star' ></i>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="cards">
+                        <h3>Service impeccable</h3>
+                        <p>Même avec leur téléphone saturé d’appel il prennent le temp de rappeler chaque client</p>
+                        <div>
+                            <img src="https://www.iconpacks.net/icons/2/free-icon-user-3296.png" style="height:2rem;width: 2rem;border-radius: 225rem;object-fit: cover;" alt="Personne">
+                            <div>
+                                <h4>Fayssal Seghiri</h4>
+                                <p>Il y a 1 moi</p>
+                            </div>
+                            <div>
+                                <i class='bx bxs-star' ></i><i class='bx bxs-star' ></i><i class='bx bxs-star' ></i><i class='bx bxs-star' ></i><i class='bx bxs-star' ></i>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="cards">
+                        <h3>Excellent service</h3>
+                        <p>Cet et dit quel approchons tout couronne» volupté, d'athlete quel demain long frémir loisirs mon autour long frémir loisirs mon autour</p>
+                        <div>
+                            <img src="https://www.iconpacks.net/icons/2/free-icon-user-3296.png" style="height:2rem;width: 2rem;border-radius: 225rem;object-fit: cover;" alt="Personne">
+                            <div>
+                                <h4>Florence Aroquianadin</h4>
+                                <p>Il y a 2 mois</p>
+                            </div>
+                            <div>
+                                <i class='bx bxs-star' ></i><i class='bx bxs-star' ></i><i class='bx bxs-star' ></i><i class='bx bxs-star' ></i><i class='bx bxs-star' ></i>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="cards">
+                        <h3>Rapide et efficace</h3>
+                        <p>Très bon accueil, agréable et disponible, bon prix, bonne continuation, je recommande </p>
+                        <div>
+                            <img src="https://www.iconpacks.net/icons/2/free-icon-user-3296.png" style="height:2rem;width: 2rem;border-radius: 225rem;object-fit: cover;" alt="Personne">
+                            <div>
+                                <h4>GUILMELLAH Abderrahmane</h4>
+                                <p>Il y a 6 mois</p>
+                            </div>
+                            <div>
+                                <i class='bx bxs-star' ></i><i class='bx bxs-star' ></i><i class='bx bxs-star' ></i><i class='bx bxs-star' ></i><i class='bx bxs-star' ></i>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="cards">
+                        <h3>Boutique excellente</h3>
+                        <p>Excellent boutique repond en temps et en heure, prestation de qualité à retenir</p>
+                        <div>
+                            <img src="https://www.iconpacks.net/icons/2/free-icon-user-3296.png" style="height:2rem;width: 2rem;border-radius: 225rem;object-fit: cover;" alt="Personne">
+                            <div>
+                                <h4>Alassane Kebe</h4>
+                                <p>Il y a 4 mois</p>
+                            </div>
+                            <div>
+                                <i class='bx bxs-star' ></i><i class='bx bxs-star' ></i><i class='bx bxs-star' ></i><i class='bx bxs-star' ></i><i class='bx bxs-star' ></i>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <main class="a-propos" id="À-propos">
+        <div>
+            <div>
+                <h2>À-propos de Carsam</h2>
+                <h3>D'ou nous venons</h3>
+                <p>Crispée beauté vivre morceau beauté et corps l'amour pour monstre, excitant pour fait extase son nous vainqueur beauté et masque. Fleuve tout yeux des éclairé l'art en a tes. Genre mensonge gaze pleure grimace pauvre sa fait. Non parfaite tout.</p>
+                <h3>contacts</h3>
+                <div>
+                    <a href="mailto:sasucarsam93150@gmail.com"><i class='bx bx-envelope'></i> sasucarsam93150@gmail.com</a>
+                    <p><a href="tel:0171828302"><i class='bx bx-phone' ></i> 01 71 82 83 02 / </a><a href="tel:0763506973">07 63 50 69 73</a></p>
+                    <a href="https://www.google.com/maps/place/CARSAM/@48.9405897,2.4500865,20z/data=!4m13!1m7!3m6!1s0x47e66b5bca5bfcbb:0x41e84109d94b3b8d!2s158+Av.+Charles+Floquet,+93150+Le+Blanc-Mesnil!3b1!8m2!3d48.940672!4d2.4500682!3m4!1s0x47e66b5a3363eedf:0x167d8facbb58fdd8!8m2!3d48.9406238!4d2.4502754?hl=fr-FR"><i class='bx bx-map' ></i> 158 Av. Charles Floquet, 93150 Le Blanc Mesnil</a>
+                </div>
+            </div>
+            <div>
+                <div class="mapouter"><div class="gmap_canvas"><iframe title="Google map" width="600" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=158%20Av.%20Charles%20Floquet,%2093150%20Le%20Blanc-Mesnil&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://putlocker-is.org">putlocker</a><br><style>.mapouter{position:relative;text-align:right;height:500px;width:600px;}</style><a href="https://www.embedgooglemap.net">use google maps on website</a><style>.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:600px;}</style></div></div>
+            </div>
+        </div>
+        <div>
+            <div>
+            <h3>Horaires</h3>
+                <p>Lundi au Jeudi de 10h à 18h <br>
+                    Vendredi de 10h à 12h30 et de 14h30 à 18h <br>
+                    Samedi de 10h à 18h</p>
+
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        
+    </footer>
+
+    <script>
+        const btnsOpinion = document.querySelectorAll('span > i')
+        const containerOpinion = document.querySelector('main.accueil > div:nth-of-type(4) > div > div')
+
+            // ! Opinions functions
+
+        let i = 0
+        const classes = "abcdefg"
+
+        function opinionFuction() {
+            if(i == classes.length - 1){
+                i = 0
+                containerOpinion.setAttribute("class", classes[i])
+            }
+            else{
+                i++
+                containerOpinion.setAttribute("class", classes[i])
+            }
+        }
+
+        btnsOpinion[0].addEventListener("click", () => {
+            clearInterval(Interval)
+            
+            Interval = setInterval(() => {
+                opinionFuction()
+            }, 8000);
+
+            if(i == 0){
+                i = classes.length - 1
+                containerOpinion.setAttribute("class", classes[i])
+            }
+            else{
+                i--
+                    containerOpinion.setAttribute("class", classes[i])
+            }
+        })
+
+        btnsOpinion[1].addEventListener("click", () => {
+            clearInterval(Interval)
+            opinionFuction()
+            
+            Interval = setInterval(() => {
+                opinionFuction()
+            }, 8000);
+        })
+
+        Interval = setInterval(() => {
+            opinionFuction()
+        }, 8000);
+
+
+        // touch
+
+        
+        const div = document.querySelector('body')
+
+        document.addEventListener('touchstart', (e) => {
+            start = e.changedTouches[0].clientX
+        })
+
+        document.addEventListener('touchmove', (e) => {
+            end = e.changedTouches[0].clientX
+            swapOnce()
+        })
+
+        function swapOnce(){
+            if (start - 100 > end ) {
+                if (div.innerHTML != "Left"){
+                    if (start != -5) {
+                        clearInterval(Interval)
+                        opinionFuction()
+                        
+                        Interval = setInterval(() => {
+                            opinionFuction()
+                        }, 8000);
+
+                        console.log("Left")
+
+                        start = -5
+                    }
+                }
+            }
+            if (start + 100 < end && div.innerHTML != 'Right' && start != -5) {
+                clearInterval(Interval)
+                
+                Interval = setInterval(() => {
+                    opinionFuction()
+                }, 8000);
+
+                if(i == 0){
+                    i = classes.length - 1
+                    containerOpinion.setAttribute("class", classes[i])
+                }
+                else{
+                    i--
+                        containerOpinion.setAttribute("class", classes[i])
+                }
+
+                console.log("right")
+
+                start = -5
+            }
+        }
+    
+    </script>
+</body>
+</html>
